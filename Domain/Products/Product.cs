@@ -7,7 +7,7 @@ using Domain.Shared;
 
 namespace Domain.Products
 {
-    public class Product : Entity<Guid>
+    public class Product : AggregateRoot<Guid>
     {
         public Product(Guid id) : base(id)
         {            

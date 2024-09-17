@@ -8,7 +8,7 @@ using Domain.Products;
 
 namespace Domain.Orders
 {
-    public class Order : Entity<Guid>
+    public class Order : AggregateRoot<Guid>
     {
         private readonly HashSet<LineItem> _lineItems = new();
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Abstractions
 {
-    public class Entity<T>
+    public abstract class Entity<T>
     {
      protected Entity(T id)
     {

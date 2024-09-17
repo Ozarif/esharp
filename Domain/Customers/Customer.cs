@@ -6,7 +6,7 @@ using Domain.Abstractions;
 
 namespace Domain.Customers
 {
-    public class Customer : Entity<Guid>
+    public class Customer : AggregateRoot<Guid>
     {
         public Customer( Guid id) : base(id)
         {            
